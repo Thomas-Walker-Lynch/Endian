@@ -1,0 +1,6 @@
+SHELL=/bin/bash
+MAKE=/usr/bin/make --no-print-directory -f $(RESOURCES)/lib/makefile
+C=gcc
+CFLAGS=-std=gnu18 -Werror -O0 -ggdb -DDEBUG -DDEBUGDB -I$(SRCDIR) -I$(INCDIR) -I$(RESOURCES)/include 
+LINKFLAGS=-L$(LIBDIR) -L$(ENVDIR)/lib/ -l$(PROJECT)
+

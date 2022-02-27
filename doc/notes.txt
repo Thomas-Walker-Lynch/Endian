@@ -1,0 +1,11 @@
+
+server side:
+
+# ip tuntap add dev tun0 mode tun_morph
+# ip a add 10.0.6.1/24 dev tun_morph
+
+
+client side:
+
+# ip tuntap add dev tun0 mode tun_rt
+# ip a add 10.0.7.1/24 dev tun_rt
